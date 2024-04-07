@@ -81,7 +81,7 @@ a {
 .logo {
     display: flex;
     align-items: center; 
-    width: 100px;   
+    width: 90px;   
 }
 
 .logo a {
@@ -89,7 +89,7 @@ a {
     transform: rotate(-0.5deg);
 }
 
-.logo video {
+.logo img {
     width: 100%;
 }
 
@@ -448,7 +448,7 @@ section {
         position: relative;
         display: flex;
         align-items: center; 
-        width: 60px;  
+        width: 70px;  
     }
     
     .mobile-nav .logo a {
@@ -456,8 +456,12 @@ section {
         transform: rotate(0deg);
     }
     
-    .mobile-nav .logo video {
+    .mobile-nav .logo img {
         width: 100%;
+    }
+    .logo img {
+        max-width: 100%;
+        height: auto;
     }
     .container .home {
         padding: 0;
@@ -553,7 +557,7 @@ section {
         position: relative;
         display: flex;
         align-items: center; 
-        width: 50px;  
+        width: 60px;  
     }
     
     .mobile-nav .logo a {
@@ -561,7 +565,7 @@ section {
         transform: rotate(0deg);
     }
     
-    .mobile-nav .logo video {
+    .mobile-nav .logo img {
         width: 100%;
     }
 
@@ -611,20 +615,4 @@ section {
         width: 350px;
         font-size: 12px;
     }
-}
-
-.container {
-    width: calc(100% - 100px); /* Adjust as needed */
-    height: 100vh;
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden;
-    position: relative;
-    top: 0;
-    left: 0;
-    padding: 0;
-    text-align: center;
-    margin-left: 100px;
-    scroll-behavior: smooth; /* Smooth scrolling behavior */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
