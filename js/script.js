@@ -67,3 +67,14 @@ function startVideo() {
 }
 
 setTimeout(startVideo, 4000);
+
+function playLogoVideo() {
+    var logoVideo = document.getElementById("logo-video");
+    logoVideo.src = "assests/logo.gif"; // Resetting the source to ensure it plays from the beginning
+    logoVideo.play();
+
+    // Pause the video after 1 second (1000 milliseconds)
+    setTimeout(function() {
+        logoVideo.pause();
+    }, 1000); // Adjust this value as needed
+}

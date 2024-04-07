@@ -81,7 +81,7 @@ a {
 .logo {
     display: flex;
     align-items: center; 
-    width: 90px;   
+    width: 100px;   
 }
 
 .logo a {
@@ -89,7 +89,7 @@ a {
     transform: rotate(-0.5deg);
 }
 
-.logo img {
+.logo video {
     width: 100%;
 }
 
