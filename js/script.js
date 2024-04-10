@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var loader = document.getElementById("preloader");
         loader.style.display = "none";
         document.getElementById('video').style.display = 'block';
-    }, 4000); 
+    }, 3000); 
 });
 
 window.addEventListener("load", function() {
     setTimeout(function() {
         var loader = document.getElementById("preloader");
         loader.style.display = "none";
-    }, 5000); 
+    }, 4000); 
     
 });
 
@@ -68,13 +68,20 @@ function startVideo() {
 
 setTimeout(startVideo, 4000);
 
-function playLogoVideo() {
-    var logoVideo = document.getElementById("logo-video");
-    logoVideo.src = "assests/logo.gif"; // Resetting the source to ensure it plays from the beginning
-    logoVideo.play();
 
-    // Pause the video after 1 second (1000 milliseconds)
-    setTimeout(function() {
-        logoVideo.pause();
-    }, 1000); // Adjust this value as needed
-}
+var container = document.getElementById('container');
+
+window.addEventListener('wheel', function(e) {
+  if (e.deltaY > 0) {
+    container.scrollBy({
+      left: 100,
+      behavior: 'smooth'
+    });
+  } else {
+    container.scrollBy({
+      left: -100,
+      behavior: 'smooth'
+    });
+  }
+});
+
