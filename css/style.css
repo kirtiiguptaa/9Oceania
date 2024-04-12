@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
-
-
 @font-face {
     font-family: 'gilroy';
     src: url('../assests/fonts/Gilroy-Extrabold.ttf') format('truetype');
@@ -34,7 +32,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "gilroy", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #preloader {
@@ -372,7 +370,7 @@ a {
 }
 
 .left p {
-    font-family: "gilroy", sans-serif;
+    /* font-family: "gilroy", sans-serif; */
     font-weight: 400;
     font-size: 20px;
     margin-bottom: 30px;
@@ -451,7 +449,7 @@ a {
 }
 
 .work .content p{
-    font-family: "gilroy", sans-serif;
+    /* font-family: "gilroy", sans-serif; */
     width: 100%;
     font-size: 24px;
     font-weight: 400;
@@ -517,7 +515,7 @@ a {
 }
 
 .career .career-content .content-title {
-    font-family: "gilroy", sans-serif;
+    /* font-family: "gilroy", sans-serif; */
     color: #fff;
     font-size: 22px;
     font-weight: 600;
@@ -526,7 +524,7 @@ a {
 }
 
 .career .career-content p {
-    font-family: "gilroy", sans-serif;
+    /* font-family: "gilroy", sans-serif; */
     width: 550px;
     font-size: 18px;
     color: #fff;
