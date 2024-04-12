@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
+
+
 @font-face {
     font-family: 'gilroy';
-    src: url('../assests/fonts/Gilroy-Black.ttf') format('truetype'),
-         url('../assests/fonts/Gilroy-Bold.ttf') format('truetype'),
-         url('../assests/fonts/Gilroy-Extrabold.ttf') format('truetype'),
-         url('../assests/fonts/Gilroy-Heavy.ttf') format('truetype'),
-         url('../assests/fonts/Gilroy-Medium.ttf') format('truetype'),
-         url('../assests/fonts/Gilroy-Regular.ttf') format('truetype'),
-         url('../assests/fonts/Gilroy-Semibold.ttf') format('truetype'),
-         url('../assests/fonts/Gilroy-Light.ttf') format('truetype');
-    font-weight: normal;
+    src: url('../assests/fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../assests/fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../assests/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('../assests/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -42,7 +58,7 @@ a {
 #cursor {
     width: 20px;
     height: 20px;
-    background-color: #6bafd2;
+    background-color: #f9b000;
     position: fixed;
     border-radius: 50%;
     z-index: 99;
@@ -51,7 +67,7 @@ a {
 #cursor-blur {
     width: 200px;
     height: 200px;
-    background-color: #6bafd2;
+    background-color: #f9b000;
     position: fixed;
     border-radius: 50%;
     filter: blur(150px);
@@ -92,15 +108,24 @@ a {
     width: 100%;
 }
 
-.toggleBtn {
+.toggle-btn {
     position: fixed;
     top: 45%;
-    width: 30px;
-    height: 50px;
     cursor: pointer;
 }
 
-.toggleBtn i {
+.toggle-btn i {
+    font-size: 27px;
+}
+
+.nav-close {
+    display: none;
+    position: fixed;
+    top: 45%;
+    cursor: pointer;
+}
+
+.nav-close i {
     font-size: 27px;
 }
 
@@ -109,7 +134,7 @@ a {
     flex-direction: column;
     list-style-type: none;
     position: absolute;
-    bottom: 75px;
+    bottom: 85px;
     align-items: center;
     justify-content: center;
 }
@@ -137,7 +162,7 @@ a {
 
 .pride {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     left: 32px;
     cursor: pointer;
 }
@@ -148,45 +173,37 @@ a {
 }
 
 .pride:hover::after {
-    content: "We honour and celebrate the rich diversity of the LGBTQ+ Community.";
+    content: "#Love Wins";
     position: absolute;
-    bottom: 0px;
-    left: 80px;
+    bottom: -20px;
+    left: -28px;
     width: 400px;
-    color: #6bafd2;
-    font-size: 24px; 
+    color: #fd8eb1;
+    font-size: 17px; 
 }
 
 #menu-list {
     display: none;
-}
-
-.large-nav .menu-list {
     position: fixed;
-    text-align: center;
     top: 0;
     left: 80px;
     background-color: #000;
-    width: 300px;
+    width: 100%;
     height: 100vh;
     z-index: 9999;
-}
-
-.show-menu {
-    display: block;
-    transition: all 0.5s linear;
+    padding: 0 50px;
+    transition: all 0.5s cubic-bezier(0, 0, 0.5, 1)
 }
 
 .large-nav .menu-list li {
-    margin: 60px 70px;
+    margin: 50px 70px;
     list-style: none;
-    transition: all 0.4s;
-    z-index: 30;
 }
 
 .large-nav .menu-list li a {
+    padding: 8px 12px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -199,6 +216,42 @@ a {
     color: #000;
     padding: 8px 12px;
     border-radius: 12px;
+}
+
+.service-dropdown {
+    display: none;
+    position: absolute;
+    left: 280px;
+    top: -3px;
+}
+
+.dropdown:hover .service-dropdown {
+    display: block;
+}
+
+.service-dropdown .service-list {
+    display: flex;
+}
+
+.service-list .heading {
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid #f9b000;
+}
+
+.first li a.heading-list,
+.second li a.heading-list,
+.third li a.heading-list {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.first li a.heading-list:hover,
+.second li a.heading-list:hover,
+.third li a.heading-list:hover {
+    color: #f9b000;
+    background-color: #000;
+    font-weight: 500;
 }
 
 .mobile-nav {
@@ -277,17 +330,17 @@ a {
     animation-iteration-count: infinite;
 }
 
-#scroller h3 {
+.home h3 {
     display: inline-block;
-    font-size: 120px;
+    font-size: 90px;
     font-weight: 900;
     color: #000;
     font-family: "Montserrat", sans-serif;
     transition: all linear 0.3s;
-    margin-right: 20px;
+    margin-left: 150px;
 }
 
-#scroller h3:hover {
+.home h3:hover {
     color: #fd8eb1 !important; 
 }
 
@@ -299,7 +352,6 @@ a {
         transform: translateX(-100%);
     }
 }
-
 
 .container .about-us {
     display: flex;
@@ -320,6 +372,8 @@ a {
 }
 
 .left p {
+    font-family: "gilroy", sans-serif;
+    font-weight: 400;
     font-size: 20px;
     margin-bottom: 30px;
 }
@@ -337,6 +391,7 @@ a {
 }
 
 .container .approach {
+    font-family: "Montserrat", sans-serif;
     background-color: #fff;
     height: 100vh;
     display: flex;
@@ -396,6 +451,7 @@ a {
 }
 
 .work .content p{
+    font-family: "gilroy", sans-serif;
     width: 100%;
     font-size: 24px;
     font-weight: 400;
@@ -411,28 +467,48 @@ a {
 
 /* Career */
 .career {
-    background-color: #fff;
+    background: url(../assests/careers.png) no-repeat center;
+    background-size: cover;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 150px;
+    animation: zoomInOut 10s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.career-content {
+    display: flex;
 }
 
 .career .career-title {
+    font-family: "Montserrat", sans-serif;
     font-size: 60px;
     margin-top: 10px;
+    color: #fff;
 }
 
-.career-img {
+/* .career-img {
     width: 550px;
     margin-top: 10px;
 }
 
 .career-img img {
     width: 100%;
-}
+} */
 
 .career .career-content {
     display: flex;
@@ -441,16 +517,20 @@ a {
 }
 
 .career .career-content .content-title {
-    font-size: 16px;
-    font-weight: 500;
+    font-family: "gilroy", sans-serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
     border-bottom: 2px solid #6bafd2;
-    width: 100px;
+    width: 144px;
 }
 
 .career .career-content p {
+    font-family: "gilroy", sans-serif;
     width: 550px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -487,7 +567,7 @@ a {
 
 .contact-container .contact-title h2{
     font-weight: 600;
-    color: #fd8eb1;
+    color: #f9b000;
     font-size: 40px;
     margin-bottom: 5px;
 }
@@ -496,7 +576,7 @@ a {
     border: none;
     width: 120px;
     height: 5px;
-    background-color: #fd8eb1;
+    background-color: #f9b000;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -520,7 +600,7 @@ a {
 }
 
 .contact-container .contact-inputs:focus {
-    border: 2px solid #fd8eb1;
+    border: 2px solid #f9b000;
 }
 
 .contact-container .contact-inputs::placeholder {
@@ -539,7 +619,7 @@ a {
     color: #fff;
     border: none;
     border-radius: 50px;
-    background-color: #fd8eb1;
+    background-color: #f9b000;
     cursor: pointer;
 }
 
@@ -579,11 +659,23 @@ a {
         display: block;
         height: 70px;
     }
-    .mobile-nav .toggleBtn {
+    .mobile-nav .toggle-btn i {
+        font-size: 20px;
+    }
+    .mobile-nav .toggle-btn {
         position: relative;
         top: 0;
-        width: 34px;
-        height: 34px;
+        right: 0;
+    }
+    .mobile-nav .nav-close {
+        position: relative;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+    
+    .mobile-nav .nav-close i {
+        font-size: 20px;
     }
     .header {
         display: flex;
@@ -630,6 +722,41 @@ a {
         padding: 8px 12px;
         border-radius: 12px;
     }
+    .service-dropdown {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .dropdown:hover .service-dropdown {
+        display: block;
+    }
+    
+    .service-dropdown .service-list {
+        display: flex;
+    }
+    
+    .service-list .heading {
+        font-size: 18px;
+        font-weight: 500;
+        border-bottom: 2px solid #f9b000;
+    }
+    
+    .first li a.heading-list,
+    .second li a.heading-list,
+    .third li a.heading-list {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .first li a.heading-list:hover,
+    .second li a.heading-list:hover,
+    .third li a.heading-list:hover {
+        color: #f9b000;
+        background-color: #000;
+        font-weight: 500;
+    }
     .main-container {
         overflow-y: auto;
         padding-left: 0;
@@ -650,6 +777,11 @@ a {
         padding-left: 0;
         margin-bottom: 20px;
     }
+    .home h3 {
+        margin-left: 0;
+        font-size: 70px;
+        font-weight: 800;
+    }
     .container .about-us {
         display: block;
         width: 100%;
@@ -658,10 +790,11 @@ a {
     }
     .career {
         padding-left: 0;
+        overflow: hidden;
     }
     .career .career-title {
         font-size: 40px;
-        margin-top: 80px;
+        margin-top: 0px;
     }
     .contact-container {
         padding-top: 150px;
@@ -694,8 +827,8 @@ a {
         height: 100vh;
     }
     .home h3 {
-        font-size: 40px;
-        font-weight: 600;
+        font-size: 48px;
+        font-weight: 700;
     }
     section {
         max-width: 350px;
@@ -718,7 +851,10 @@ a {
     }
     .career .career-title {
         font-size: 40px;
-        margin-top: 80px;
+        margin-top: 0;
+    }
+    .career .career-content .content-title {
+        margin: 10px 20px;
     }
     .career-img {
         width: 330px;
@@ -726,5 +862,6 @@ a {
     .career .career-content p {
         width: 330px;
         font-size: 12px;
+        margin: 0 20px;
     }
 }
