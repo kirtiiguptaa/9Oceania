@@ -62,7 +62,7 @@ a {
     z-index: 99;
 }
 
-#cursor-blur {
+/* #cursor-blur {
     width: 200px;
     height: 200px;
     background-color: #f9b000;
@@ -70,7 +70,7 @@ a {
     border-radius: 50%;
     filter: blur(150px);
     z-index: 99;
-}
+} */
 
 .main-container {
     position: relative;
@@ -158,6 +158,10 @@ a {
     opacity: 1;
 }
 
+.pride-content {
+    position: relative; /* Add position:relative to the parent container */
+}
+
 .pride {
     position: absolute;
     bottom: 30px;
@@ -170,15 +174,16 @@ a {
     border-radius: 50%;
 }
 
-.pride:hover::after {
+.pride-img:hover::after {
     content: "#Love Wins";
     position: absolute;
-    bottom: -20px;
-    left: -28px;
+    bottom: -16px;
+    left: -26px;
     width: 400px;
     color: #fd8eb1;
-    font-size: 17px; 
+    font-size: 13px; 
 }
+
 
 #menu-list {
     display: none;
@@ -465,7 +470,8 @@ a {
 
 /* Career */
 .career {
-    background: url(../assests/careers.png) no-repeat center;
+    position: fixed;
+    background: url(../assests/careers1.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -520,18 +526,17 @@ a {
     font-size: 22px;
     font-weight: 600;
     border-bottom: 2px solid #6bafd2;
-    width: 144px;
+    width: 160px;
 }
 
 .career .career-content p {
     /* font-family: "gilroy", sans-serif; */
-    width: 550px;
+    width: 800px;
     font-size: 18px;
     color: #fff;
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 10px;
 }
 
@@ -540,7 +545,8 @@ a {
 }
 
 .career .button a {
-    background: #000;
+    background: #fff;
+    color: #000;
     padding: 10px 20px;
     border-radius: 12px;
 }
@@ -605,6 +611,23 @@ a {
     color: #a9a9a9;
 }
 
+.contact-container .resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.resume a i {
+    font-size: 20px;
+    color: #fff;
+    background-color: #f9b000;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 8px;
+}
+
 .contact-container button {
     display: flex;
     align-items: center;
@@ -619,6 +642,196 @@ a {
     border-radius: 50px;
     background-color: #f9b000;
     cursor: pointer;
+}
+
+.contact-btn {
+    font-size: 16px;
+    color: #f9b000;
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+/* Services */
+.container .services-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    left: 100px;
+}
+
+.container .creative-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creative-services .creative-heading {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.creative-sections {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.creative-first,
+.creative-second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creative-first .creative-list,
+.creative-second .creative-list {
+    list-style-type: none;
+}
+
+.creative-first-left,
+.creative-second-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+
+.creative-first .creative-list a,
+.creative-second .creative-list a {
+    color: #000;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.creative-first-right,
+.creative-second-left {
+    width: 400px;
+}
+
+.creative-first-right img,
+.creative-second-left img {
+    width: 100%;
+}
+
+/* About us */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about .about-heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    animation: slideInUp 1s ease-in-out; /* Animation for heading */
+}
+
+.about .about-content {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    color: #f9b000;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    left: 140px;
+}
+
+.about .about-content span {
+    color: #333;
+    font-weight: 400;
+    width: 90%;
+}
+
+/* Keyframes for animations */
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.approach-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+    left: 0;
+}
+
+.approach-page-heading {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.approach-page-content {
+    font-size: 20px;
+    width: 90%;
+}
+
+.whatwedo-page,
+.howwedo-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 100px;
+    padding: 0 80px;
+}
+
+.whatwedo-page-heading,
+.howwedo-page-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.whatwedo-content li,
+.howwedo-content li {
+    margin-bottom: 10px;
+}
+
+.whatwedo-content li a,
+.howwedo-content li  a {
+    font-size: 18px;
+    color: #000;
+    text-transform: capitalize;
+    margin: auto;
+}
+
+
+/* SEO */
+.seo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 1024px) {
