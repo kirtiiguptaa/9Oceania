@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    #scroll-container {
+  width: 100%;
+  height: 100vh; 
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#content {
+  width: 300%; 
+  display: flex;
+}
+#content section {
+  width: 100%; 
+  height: 100vh;
+}
+</style>
+<body>
+  
+  <nav class="large-nav">
+    <div class="logo">
+        <a href="index.html" onclick="startVideo()"><video id="logo-video" muted src="assests/logo2.mp4"></video></a>
+    </div>
+    <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>    
+    </div>
+    <div class="nav-close" id="nav-close">
+        <i class="fa-regular fa-circle"></i>
+    </div>
+    <ul class="socials">
+        <li><a href="https://www.instagram.com/9oceania?igsh=MTE0MHB3NmhkOGpldQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+
+    <a href="https://www.instagram.com/9oceania?igsh=MTE0MHB3NmhkOGpldQ==" target="_blank" class="pride">
+        <div class="pride-img">
+            <img src="assests/pride.png" alt="">
+        </div>
+    </a>
+    
+    <ul class="menu-list" id="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown"><a href="services.html">Services <i class="fa-solid fa-angle-right"></i></a>
+        <div class="service-dropdown">
+            <div class="service-list">
+                <ul class="first">
+                    <li><a class="heading" href="#">Creative</a></li>
+                    <li><a class="heading-list" href="#">UX Design</a></li>
+                    <li><a class="heading-list" href="#">UI Design</a></li>
+                    <li><a class="heading-list" href="#">Digital Design</a></li>
+                    <li><a class="heading-list" href="#">Copywriting</a></li>
+                    <li><a class="heading-list" href="#">Branding</a></li>
+                    <li><a class="heading-list" href="#">Print Design</a></li>
+                </ul>
+
+                <ul class="second">
+                    <li><a class="heading" href="#">Web Development</a></li>
+                    <li><a class="heading-list" href="#">WordPress</a></li>
+                    <li><a class="heading-list" href="#">Webflow</a></li>
+                    <li><a class="heading-list" href="#">eCommerce</a></li>
+                    <li><a class="heading-list" href="#">Shopify</a></li>
+                    <li><a class="heading-list" href="#">WooCommerce</a></li>
+                </ul>
+
+                <ul class="third">
+                    <li><a class="heading" href="#">Digital Marketing</a></li>
+                    <li><a class="heading-list" href="#">Google Advertising</a></li>
+                    <li><a class="heading-list" href="seo.html">SEO</a></li>
+                    <li><a class="heading-list" href="#">Paid Social Advertising</a></li>
+                    <li><a class="heading-list" href="#">Organic Social</a></li>
+                </ul>
+            </div>
+
+        </div></li>
+        <li><a href="work.html">Our Work</a></li>
+        <li><a href="career.html">Careers</a></li>
+    </ul>
+</nav>
+
+<nav class="mobile-nav">
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" onclick="playLogoVideo()"><img loop="false" src="assests/logo.gif" id="logo-video" alt=""></a>
+        </div>
+        <div class="toggleBtn" id="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-close" id="mobile-nav-close">
+            <i class="fa-solid fa-shapes"></i>
+        </div>               
+        <ul class="menu-list" id="mobile-menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown"><a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                <!-- <div class="service-dropdown">
+                    <div class="service-list">
+                        <ul class="first">
+                            <li><a class="heading" href="#">Creative</a></li>
+                            <li><a class="heading" href="#">Web Development</a></li>
+                            <li><a class="heading" href="#">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="career.html">Careers</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div id="scroll-container">
+        <div id="content">
+          <section class="home" id="home">
+            <h3>Beyond Boundaries <br> Above Trends</h3>
+        </section>
+        <section class="about-us">
+            <div class="left">
+                <h3 class="about-title">About Us</h3>
+                <p>At 9 Oceania, we navigate the digital frontier with innovation and disrupt the norms to set trends. Merging art with technology, and data with creativity, we architect growth and transformative strategies that elevate brands.  We’re all about building amazing websites, getting your site noticed on search engines, and making sure you're a hit on social media. Imagine us setting sail together, where there’s a whole ocean of possibilities and every wave brings us closer to your goals. Join us, and let’s make your brand as limitless as the ocean.</p>
+            </div>
+            <div class="right">
+                <img src="assests/about.gif" alt="">
+            </div>
+        </section>
+            <h3 class="approach">What We Do <br> How We Do</h3>
+        </section>   -->
+        <section class="work">
+            <div class="flag-container">
+                <div class="flag1">
+                    <img src="assests/australian-aboriginal-flag.gif" alt="">
+                </div>
+                <div class="flag2">
+                    <img src="assests/australian-aboriginal-flag2.gif" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <p>Rock Agency is located on the unceded lands of the Wurundjeri Woi Wurrung people. We acknowledge and respect them as the Traditional Owners of the land on which we work, and pay our respects to their Elders, past and present.</p>
+            </div>
+        </section>
+        </div>
+      </div>
+</body>
+<script >
+    document.getElementById('scroll-container').addEventListener('wheel', function(event) {
+  if (event.deltaY !== 0) {
+    this.scrollLeft += event.deltaY;
+    event.preventDefault();
+  }
+});
+
+</script>
+</html>
