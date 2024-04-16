@@ -1280,14 +1280,18 @@ a {
     }
     .services-main .service-content {
         top: 40px;
-        width: 350px;
-        left: 0;
+        width: 330px;
+        left: 6px;
         height: 100%;
         margin-bottom: 40px;
     }
     .service-content .service-subheading {
         font-size: 22px;
         font-weight: 700;    
+    }
+    .service-content .subservice-content {
+        font-size: 18px;
+        font-weight: 400;
     }
     .creative-row, 
     .dev-row, 
