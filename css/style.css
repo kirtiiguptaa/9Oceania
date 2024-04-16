@@ -1309,6 +1309,11 @@ a {
         height: 100%;
 	padding: 20px 15px;
     }
+    .creative-services .creative-content, 
+    .dev-services .dev-content, 
+    .digital-services .digital-content {
+	    font-size: 18px;
+    }
     .about .about-heading {
         margin-bottom: 20px;
     }
