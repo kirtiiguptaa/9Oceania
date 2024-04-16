@@ -1410,14 +1410,18 @@ a {
     }
     .services-main .service-content {
         top: 40px;
-        width: 350px;
-        left: 20px;
+        width: 330px;
+        left: 6px;
         height: 100%;
         margin-bottom: 40px;
     }
     .service-content .service-subheading {
         font-size: 22px;
         font-weight: 700;    
+    }
+    .service-content .subservice-content {
+        font-size: 18px;
+        font-weight: 400;
     }
     .creative-row, 
     .dev-row, 
@@ -1427,12 +1431,18 @@ a {
     .creative-list, 
     .dev-list, 
     .digital-list {
-        width: 330px;
+        width: 310px;
     }
     .scroll-container .creative-services, 
     .scroll-container .dev-services, 
     .scroll-container .digital-services {
         height: 100%;
+	padding: 20px 15px;
+    }
+    .creative-services .creative-content, 
+    .dev-services .dev-content, 
+    .digital-services .digital-content {
+	    font-size: 18px;
     }
     .about .about-heading {
         margin-bottom: 20px;
