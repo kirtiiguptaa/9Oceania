@@ -12,19 +12,22 @@
     <div id="preloader"></div>
 
     <div class="main-container">
-        
-        <div id="cursor"></div>
-        <div id="cursor-blur"></div>
 
         <nav class="large-nav">
             <div class="logo">
                 <a href="index.html" onclick="startVideo()"><video id="logo-video" muted src="assests/logo2.mp4"></video></a>
             </div>
             <div class="toggle-btn" id="toggle-btn">
-                <i class="fa-solid fa-bars"></i>    
+                <div class="toggle-icon">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </div>  
             </div>
             <div class="nav-close" id="nav-close">
-                <i class="fa-regular fa-circle"></i>
+                <div class="toggle-icon">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </div>
             </div>
             <ul class="socials">
                 <li><a href="https://www.instagram.com/9oceania?igsh=MTE0MHB3NmhkOGpldQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
@@ -87,10 +90,16 @@
                     <a href="index.html" onclick="playLogoVideo()"><img loop="false" src="assests/logo.gif" id="logo-video" alt=""></a>
                 </div>
                 <div class="toggleBtn" id="mobile-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
+                    <div class="mobile-toggle-icon">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div> 
                 </div>
                 <div class="nav-close" id="mobile-nav-close">
-                    <i class="fa-solid fa-shapes"></i>
+                    <div class="mobile-toggle-icon">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div>
                 </div>               
                 <ul class="menu-list" id="mobile-menu-list">
                     <li><a href="index.html">Home</a></li>

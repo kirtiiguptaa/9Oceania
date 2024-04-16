@@ -8,19 +8,22 @@
 <body>
 
     <div class="main-container">
-        
-        <div id="cursor"></div>
-        <div id="cursor-blur"></div>
 
         <nav class="large-nav">
             <div class="logo">
                 <a href="index.html" onclick="startVideo()"><video id="logo-video" muted src="assests/logo2.mp4"></video></a>
             </div>
             <div class="toggle-btn" id="toggle-btn">
-                <i class="fa-solid fa-bars"></i>    
+                <div class="toggle-icon">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </div>  
             </div>
             <div class="nav-close" id="nav-close">
-                <i class="fa-regular fa-circle"></i>
+                <div class="toggle-icon">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </div>
             </div>
             <ul class="socials">
                 <li><a href="https://www.instagram.com/9oceania?igsh=MTE0MHB3NmhkOGpldQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
@@ -83,15 +86,31 @@
                     <a href="index.html" onclick="playLogoVideo()"><img loop="false" src="assests/logo.gif" id="logo-video" alt=""></a>
                 </div>
                 <div class="toggleBtn" id="mobile-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
+                    <div class="mobile-toggle-icon">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div> 
                 </div>
                 <div class="nav-close" id="mobile-nav-close">
-                    <i class="fa-solid fa-shapes"></i>
+                    <div class="mobile-toggle-icon">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div>
                 </div>               
                 <ul class="menu-list" id="mobile-menu-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown"><a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                        <!-- <div class="service-dropdown">
+                            <div class="service-list">
+                                <ul class="first">
+                                    <li><a class="heading" href="#">Creative</a></li>
+                                    <li><a class="heading" href="#">Web Development</a></li>
+                                    <li><a class="heading" href="#">Digital Marketing</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
                     <li><a href="work.html">Our Work</a></li>
                     <li><a href="career.html">Careers</a></li>
                 </ul>
@@ -109,7 +128,8 @@
                 <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
                 <input type="tel" name="tel" placeholder="Your Number" class="contact-inputs" required>
                 <textarea name="message" placeholder="Your Message" class="contact-inputs textarea" required></textarea>
-                <div class="resume">Please send your resume to<a href="mailto:9oceania@gmail.com" target="_blank"> <i class="fa-regular fa-envelope"></i> </a></div>
+                <label for="resume">Upload your cover letter</label>
+                <input type="file" name="attachment" id="attachment" class="contact-inputs" accept=".pdf" required>
                 <button type="submit">Contact Us</button>
             </form>
         </div>

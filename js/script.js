@@ -121,8 +121,6 @@ document.getElementById('scroll-container').addEventListener('wheel', function(e
   }
 });
 
-
-
 window.onload = function() {
 	init();
 };
