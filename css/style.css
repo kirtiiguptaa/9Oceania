@@ -442,6 +442,8 @@ a {
     flex-direction: column;
     align-items: center;
     z-index: 999;
+    position: relative;
+    margin-bottom: 0;
 }
 
 .work h3 {
@@ -1258,7 +1260,7 @@ a {
         font-size: 70px;
         font-weight: 800;
     }
-    .scroll-container .about-us {
+    .container .about-us {
         display: block;
         width: 100%;
         height: 100%;
@@ -1275,7 +1277,7 @@ a {
     .contact-container {
         padding-top: 150px;
     }
-    .scroll-container .services-main {
+    .container .services-main {
         padding: 0;
         margin-top: 40px;
         margin-bottom: 0;
@@ -1284,7 +1286,7 @@ a {
     .services-main .services {
         margin-right: 50px;
     }
-    .scroll-container .services-heading {
+    .container .services-heading {
         font-size: 60px;
         margin-bottom: 10px;
     }
@@ -1292,9 +1294,9 @@ a {
         top: 220px;
         width: 570px;
     }
-    .scroll-container .creative-services, 
-    .scroll-container .dev-services, 
-    .scroll-container .digital-services {
+    .container .creative-services, 
+    .container .dev-services, 
+    .container .digital-services {
         padding: 20px 30px;
     }
     .creative-list, 
@@ -1389,18 +1391,25 @@ a {
         font-size: 12px;
         margin: 0 15px;
     }
-    .scroll-container .services-main {
-        display: block;
-        height: 100%;
-        left: 0;
+    .container section {
+        margin-top: 70px;
     }
-    section {
-        height: 100%;
+    .container .services-main {
+        left: 0;
+        padding: 20px 15px;
+        margin-top: 20px;
+        display: block;
+        left: 0;
+        margin-bottom: 150px;
     }
     .services-main .services {
         height: 100%;
-        margin-bottom: 20px;;
+        margin-bottom: 20px;
         margin-right: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
     .service-main-list li {
         margin-bottom: 10px;
@@ -1409,11 +1418,15 @@ a {
         font-size: 24px;
     }
     .services-main .service-content {
-        top: 40px;
+        margin-top: 50px;
         width: 330px;
         left: 6px;
         height: 100%;
         margin-bottom: 40px;
+        padding: 20px 10px;
+    }
+    .container .services-heading {
+        width: 312px;
     }
     .service-content .service-subheading {
         font-size: 22px;
@@ -1433,11 +1446,11 @@ a {
     .digital-list {
         width: 310px;
     }
-    .scroll-container .creative-services, 
-    .scroll-container .dev-services, 
-    .scroll-container .digital-services {
+    .container .creative-services, 
+    .container .dev-services, 
+    .container .digital-services {
         height: 100%;
-	padding: 20px 15px;
+	    padding: 20px 15px;
     }
     .creative-services .creative-content, 
     .dev-services .dev-content, 
@@ -1451,9 +1464,20 @@ a {
         left: 20px;
         margin-top: 20px;
     }
-    .scroll-container .whatwedo-page,
-    .scroll-container .howwedo-page {
-        left: 50px;
+    .approach-page {
+        left: 0;
+    }
+    .container .whatwedo-page,
+    .container .howwedo-page {
+        left: 30px;
         height: 100%;
+    }
+    .whatwedo-content li a, 
+    .howwedo-content li a {
+        font-size: 18px;
+    }
+    .whatwedo-content li span, 
+    .howwedo-content li span {
+        font-size: 16px;
     }
 }
