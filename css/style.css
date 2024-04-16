@@ -1281,7 +1281,7 @@ a {
     .services-main .service-content {
         top: 40px;
         width: 350px;
-        left: 20px;
+        left: 0;
         height: 100%;
         margin-bottom: 40px;
     }
@@ -1297,12 +1297,13 @@ a {
     .creative-list, 
     .dev-list, 
     .digital-list {
-        width: 330px;
+        width: 310px;
     }
     .scroll-container .creative-services, 
     .scroll-container .dev-services, 
     .scroll-container .digital-services {
         height: 100%;
+	padding: 20px 15px;
     }
     .about .about-heading {
         margin-bottom: 20px;
