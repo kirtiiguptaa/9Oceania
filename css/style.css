@@ -1280,8 +1280,15 @@ footer p {
     .home h3 {
         font-size: 58px;
     }
-    .about-us {
-        padding: 50px 25px
+    .about-us .left {
+        padding: 0 20px;
+        width: 350px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .about-us .left p {
+        font-size: 16px;
+        font-weight: 300;
     }
     .work .content {
         max-width: 320px;
@@ -1328,12 +1335,6 @@ footer p {
         height: 100%;
         margin-bottom: 20px;
         margin-right: 0;
-        display: block;
-        width: 100%;
-        top: 60px;
-    }
-    .service-main-list {
-        left: 0;
     }
     .service-main-list li {
         margin-bottom: 10px;
@@ -1342,13 +1343,10 @@ footer p {
         font-size: 33px;
     }
     .services-main .service-content {
+        top: 40px;
         width: 330px;
         height: 100%;
-        padding: 20px 10px;
-        margin-top: 85px;
-    }
-    .container .services-heading {
-        width: 312px;
+        margin-bottom: 40px;
     }
     .service-content .service-subheading {
         font-size: 20px;
@@ -1372,11 +1370,7 @@ footer p {
     .container .dev-services, 
     .container .digital-services {
         height: 100%;
-	    padding: 20px 30px;
-    }
-    .container .creative-services {
-        margin-top: 0;
-        padding-top: 0;
+	padding: 20px 15px;
     }
     .creative-services .creative-content, 
     .dev-services .dev-content, 
