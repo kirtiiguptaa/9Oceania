@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9Oceania</title>
+    <title>9Oceania | Careers</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
@@ -11,33 +11,40 @@
 
     <div class="main-container">
 
-        <nav class="large-nav">
+        <div class="navbar">
             <div class="logo">
-                <a href="index.html" onclick="startVideo()"><video id="logo-video" muted src="assests/logo2.mp4"></video></a>
+                <a href="index.html"><img loop="false" src="assets/logo.webp" alt=""></a>
             </div>
+            <input type="checkbox" id="menuBtn" />  
+            <label class="menu__button" for="menuBtn">
             <div class="toggle-btn" id="toggle-btn">
                 <div class="toggle-icon">
                     <span class="line1"></span>
                     <span class="line2"></span>
                 </div>  
             </div>
+            </label>
+            <label class="menu__close" for="menuBtn">
             <div class="nav-close" id="nav-close">
                 <div class="toggle-icon">
                     <span class="line1"></span>
                     <span class="line2"></span>
                 </div>
             </div>
+            </label> 
+    
             <ul class="socials">
                 <li><a href="https://www.instagram.com/9oceania?igsh=MTE0MHB3NmhkOGpldQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
-
+    
             <a href="https://www.instagram.com/9oceania?igsh=MTE0MHB3NmhkOGpldQ==" target="_blank" class="pride">
                 <div class="pride-img">
-                    <img src="assests/pride.png" alt="">
+                    <img src="assets/pride.png" alt="">
                 </div>
             </a>
-
+        
+            <div class="menu">
             <div class="nav-menu" id="menu-list">
                 <ul class="menu-list" id="menu">
                     <li><a href="index.html">Home</a></li>
@@ -78,48 +85,12 @@
                     <li><a href="career.html">Careers</a></li>
                 </ul>
             </div>
-            
-
-        </nav>
-
-        <nav class="mobile-nav">
-            <div class="header">
-                <div class="logo">
-                    <a href="index.html" onclick="playLogoVideo()"><img loop="false" src="assests/logo.gif" id="logo-video" alt=""></a>
-                </div>
-                <div class="toggleBtn" id="mobile-menu-btn">
-                    <div class="mobile-toggle-icon">
-                        <span class="line1"></span>
-                        <span class="line2"></span>
-                    </div> 
-                </div>
-                <div class="nav-close" id="mobile-nav-close">
-                    <div class="mobile-toggle-icon">
-                        <span class="line1"></span>
-                        <span class="line2"></span>
-                    </div>
-                </div>               
-                <ul class="menu-list" id="mobile-menu-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="dropdown"><a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
-                        <!-- <div class="service-dropdown">
-                            <div class="service-list">
-                                <ul class="first">
-                                    <li><a class="heading" href="#">Creative</a></li>
-                                    <li><a class="heading" href="#">Web Development</a></li>
-                                    <li><a class="heading" href="#">Digital Marketing</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
-                    </li>
-                    <li><a href="work.html">Our Work</a></li>
-                    <li><a href="career.html">Careers</a></li>
-                </ul>
             </div>
-        </nav>
+      
+        </div>
 
         <div class="career">
+            <div class="career-bg"></div>
             <div class="career-info">
                 <h3 class="career-title">Careers</h3>
                 <div class="career-content">
@@ -135,6 +106,10 @@
             </div>
 
         </div>
+
+        <footer>
+            <p>Copyright © 2024 9Oceania. All rights reserved.</p>
+        </footer>
     </div>
 
     <script src="js/script.js"></script>

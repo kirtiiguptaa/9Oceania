@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9Oceania</title>
+    <title>9Oceania | Services</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
@@ -11,33 +11,40 @@
 
     <div class="main-container">
 
-        <nav class="large-nav">
+        <div class="navbar">
             <div class="logo">
-                <a href="index.html" onclick="startVideo()"><video id="logo-video" muted src="assests/logo2.mp4"></video></a>
+                <a href="index.html"><img loop="false" src="assets/logo.webp" alt=""></a>
             </div>
+            <input type="checkbox" id="menuBtn" />  
+            <label class="menu__button" for="menuBtn">
             <div class="toggle-btn" id="toggle-btn">
                 <div class="toggle-icon">
                     <span class="line1"></span>
                     <span class="line2"></span>
                 </div>  
             </div>
+            </label>
+            <label class="menu__close" for="menuBtn">
             <div class="nav-close" id="nav-close">
                 <div class="toggle-icon">
                     <span class="line1"></span>
                     <span class="line2"></span>
                 </div>
             </div>
+            </label> 
+    
             <ul class="socials">
                 <li><a href="https://www.instagram.com/9oceania?igsh=MTE0MHB3NmhkOGpldQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
-
+    
             <a href="https://www.instagram.com/9oceania?igsh=MTE0MHB3NmhkOGpldQ==" target="_blank" class="pride">
                 <div class="pride-img">
-                    <img src="assests/pride.png" alt="">
+                    <img src="assets/pride.png" alt="">
                 </div>
             </a>
-
+        
+            <div class="menu">
             <div class="nav-menu" id="menu-list">
                 <ul class="menu-list" id="menu">
                     <li><a href="index.html">Home</a></li>
@@ -78,46 +85,9 @@
                     <li><a href="career.html">Careers</a></li>
                 </ul>
             </div>
-            
-
-        </nav>
-
-        <nav class="mobile-nav">
-            <div class="header">
-                <div class="logo">
-                    <a href="index.html" onclick="playLogoVideo()"><img loop="false" src="assests/logo.gif" id="logo-video" alt=""></a>
-                </div>
-                <div class="toggleBtn" id="mobile-menu-btn">
-                    <div class="mobile-toggle-icon">
-                        <span class="line1"></span>
-                        <span class="line2"></span>
-                    </div> 
-                </div>
-                <div class="nav-close" id="mobile-nav-close">
-                    <div class="mobile-toggle-icon">
-                        <span class="line1"></span>
-                        <span class="line2"></span>
-                    </div>
-                </div>               
-                <ul class="menu-list" id="mobile-menu-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="dropdown"><a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
-                        <!-- <div class="service-dropdown">
-                            <div class="service-list">
-                                <ul class="first">
-                                    <li><a class="heading" href="#">Creative</a></li>
-                                    <li><a class="heading" href="#">Web Development</a></li>
-                                    <li><a class="heading" href="#">Digital Marketing</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
-                    </li>
-                    <li><a href="work.html">Our Work</a></li>
-                    <li><a href="career.html">Careers</a></li>
-                </ul>
             </div>
-        </nav>
+      
+        </div>
 
         <div class="container">
             <div class="content-wrapper">
@@ -125,9 +95,9 @@
                     <div class="services">
                         <h2 class="services-heading">Services</h2>
                         <ul class="service-main-list">
-                            <li><a href="#">Creative</a></li>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#creative-services">Creative</a></li>
+                            <li><a href="#dev-services">Web Development</a></li>
+                            <li><a href="#digital-services">Digital Marketing</a></li>
                         </ul>
                     </div>
                     <div class="service-content">
@@ -140,7 +110,7 @@
                     </div>
                 </section>
     
-                <section class="creative-services">
+                <section class="creative-services" id="creative-services">
                     <div class="creative-heading">Creative</div>
                     <p class="creative-content">In a world filled with monotony, where conformity reigns supreme, there exists a realm where imagination knows no bounds and innovation dances freely. Welcome to the sanctuary of creative design, where every pixel tells a story and every brushstroke whispers a tale of boundless possibility.</p>
                     <div class="creative-sections">
@@ -193,7 +163,7 @@
 
                 </section>
 
-                <section class="dev-services">
+                <section class="dev-services" id="dev-services">
                     <div class="dev-heading">Web Development</div>
                     <p class="dev-content"> We specialize in creating beautiful, user-friendly websites that captivate audiences and drive results. From sleek, modern designs to fully responsive layouts, we'll work closely with you to bring your vision to life.</p>
                     <div class="dev-sections">
@@ -240,7 +210,7 @@
 
                 </section>
 
-                <section class="digital-services">
+                <section class="digital-services" id="digital-services">
                     <div class="digital-heading">Digital Marketing</div>
                     <p class="digital-content">We are your trusted partner for digital marketing success. In today's digital age, a strong online presence is essential for businesses to thrive, and we're here to help you stand out from the competition and reach your target audience effectively.</p>
                     <div class="digital-sections">
@@ -280,8 +250,12 @@
 
                 </section>
             </div>
+            <footer>
+                <p>Copyright © 2024 9Oceania. All rights reserved.</p>
+            </footer>
             <a class="contact-btn" href="getintouch.html">Get in touch</a>
         </div>
+
     </div>
 
     <script src="js/script.js"></script>
