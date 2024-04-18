@@ -8,7 +8,7 @@ class HorizontalScroll {
         scrollDir: '',
         scrollPos: this.target.scrollLeft,
         scrollTop: 0,
-        speed: 90,
+        speed: 20,
         smooth: 12
       };
   
